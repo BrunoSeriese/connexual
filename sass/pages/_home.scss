@@ -4,6 +4,9 @@ height: 100vh;
 width: 100vw;
 position: relative;
 
+@include respond (phone) {
+  flex-direction: column;
+}
 
 &__overlay--1{
   position: absolute;
@@ -13,6 +16,11 @@ position: relative;
   width: 50%;
   opacity: .2;
   left: 0;
+  @include respond (phone) {
+    height: 50%;
+    width: 100%;
+  }
+
 &:hover{
 opacity: 0;
 transition: opacity 1s;
@@ -33,6 +41,13 @@ transition: opacity 1s;
   width: 50%;
   opacity: .2;
   right: 0;
+
+  @include respond (phone) {
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+
+  }
 
 
   &:hover{
@@ -55,6 +70,11 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 position: relative;
+
+
+@include respond (phone) {
+  width: 100%;
+}
 }
 
 &__half--2{
@@ -66,6 +86,11 @@ position: relative;
   background-position: center;
   position: relative;
 
+  @include respond (phone) {
+
+    width: 100%;
+  }
+
  }
 }
 
@@ -73,6 +98,10 @@ position: relative;
   position: absolute;
   z-index: 10;
   width: 100%;
+  @include respond (phone) {
+    height: 100%;
+
+  }
 
   &__name{
     position: absolute;
@@ -83,15 +112,23 @@ position: relative;
  &__text{
    position: absolute;
    left: 70%;
-  
+
 
    &--1{
      top: 5%;
         margin-top: 2.5%;
+
+        @include respond (phone) {
+          top: 50%;
+        }
    }
 
    &--2{
      margin-top: 5%;
+
+     @include respond (phone) {
+
+     }
    }
  }
 
@@ -109,6 +146,12 @@ margin-right: 2%;
 fill: $color-telegram-gray-2;
 font-weight: bold;
 
+&:hover{
+  transform: rotate(180deg);
+  transition: .4s linear;
+}
+
+
 }
 
 &--2{
@@ -121,6 +164,11 @@ font-weight: bold;
   z-index: 11;
   justify-content: center;
   align-items: center;
+  &:hover{
+    background-color: #0080F8;
+    transform: scale(1.05);
+    transition: .2s linear;
+  }
 
   &__arrow{
    fill: white;

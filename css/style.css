@@ -40,6 +40,9 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50% !important; } }
 
 body {
   font-family: roboto; }
@@ -107,6 +110,9 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .container {
+      flex-direction: column; } }
   .container__overlay--1 {
     position: absolute;
     z-index: 15;
@@ -115,6 +121,10 @@ body {
     width: 50%;
     opacity: .2;
     left: 0; }
+    @media (max-width: 37.5em) {
+      .container__overlay--1 {
+        height: 50%;
+        width: 100%; } }
     .container__overlay--1:hover {
       opacity: 0;
       transition: opacity 1s; }
@@ -129,6 +139,11 @@ body {
     width: 50%;
     opacity: .2;
     right: 0; }
+    @media (max-width: 37.5em) {
+      .container__overlay--2 {
+        height: 50%;
+        width: 100%;
+        bottom: 0; } }
     .container__overlay--2:hover {
       opacity: 0;
       transition: opacity 1s; }
@@ -143,6 +158,9 @@ body {
     background-size: cover;
     background-position: center;
     position: relative; }
+    @media (max-width: 37.5em) {
+      .container__half--1 {
+        width: 100%; } }
   .container__half--2 {
     height: 100%;
     width: 50%;
@@ -151,11 +169,17 @@ body {
     background-size: cover;
     background-position: center;
     position: relative; }
+    @media (max-width: 37.5em) {
+      .container__half--2 {
+        width: 100%; } }
 
 .header {
   position: absolute;
   z-index: 10;
   width: 100%; }
+  @media (max-width: 37.5em) {
+    .header {
+      height: 100%; } }
   .header__name {
     position: absolute;
     left: 3%;
@@ -166,6 +190,9 @@ body {
     .header__text--1 {
       top: 5%;
       margin-top: 2.5%; }
+      @media (max-width: 37.5em) {
+        .header__text--1 {
+          top: 50%; } }
     .header__text--2 {
       margin-top: 5%; }
 
@@ -175,6 +202,9 @@ body {
   margin-right: 2%;
   fill: #A6A8A9;
   font-weight: bold; }
+  .message__icon--1:hover {
+    transform: rotate(180deg);
+    transition: .4s linear; }
 
 .message__icon--2 {
   height: 85%;
@@ -186,6 +216,10 @@ body {
   z-index: 11;
   justify-content: center;
   align-items: center; }
+  .message__icon--2:hover {
+    background-color: #0080F8;
+    transform: scale(1.05);
+    transition: .2s linear; }
   .message__icon--2__arrow {
     fill: white;
     height: 45%;
