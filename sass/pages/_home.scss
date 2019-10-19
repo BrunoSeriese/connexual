@@ -4,7 +4,7 @@ height: 100vh;
 width: 100vw;
 position: relative;
 
-@include respond (phone) {
+@include respond (tab-port) {
   flex-direction: column;
 }
 
@@ -16,7 +16,7 @@ position: relative;
   width: 50%;
   opacity: .2;
   left: 0;
-  @include respond (phone) {
+  @include respond (tab-port) {
     height: 50%;
     width: 100%;
   }
@@ -42,7 +42,7 @@ transition: opacity 1s;
   opacity: .2;
   right: 0;
 
-  @include respond (phone) {
+  @include respond (tab-port) {
     height: 50%;
     width: 100%;
     bottom: 0;
@@ -72,7 +72,7 @@ background-position: center;
 position: relative;
 
 
-@include respond (phone) {
+@include respond (tab-port) {
   width: 100%;
 }
 }
@@ -86,7 +86,7 @@ position: relative;
   background-position: center;
   position: relative;
 
-  @include respond (phone) {
+  @include respond (tab-port) {
 
     width: 100%;
   }
@@ -98,7 +98,7 @@ position: relative;
   position: absolute;
   z-index: 10;
   width: 100%;
-  @include respond (phone) {
+  @include respond (tab-port) {
     height: 100%;
 
   }
@@ -118,7 +118,7 @@ position: relative;
      top: 5%;
         margin-top: 2.5%;
 
-        @include respond (phone) {
+        @include respond (tab-port) {
           top: 50%;
         }
    }
@@ -126,7 +126,7 @@ position: relative;
    &--2{
      margin-top: 5%;
 
-     @include respond (phone) {
+     @include respond (tab-port) {
 
      }
    }

@@ -110,7 +110,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .container {
       flex-direction: column; } }
   .container__overlay--1 {
@@ -121,7 +121,7 @@ body {
     width: 50%;
     opacity: .2;
     left: 0; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .container__overlay--1 {
         height: 50%;
         width: 100%; } }
@@ -139,7 +139,7 @@ body {
     width: 50%;
     opacity: .2;
     right: 0; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .container__overlay--2 {
         height: 50%;
         width: 100%;
@@ -158,7 +158,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .container__half--1 {
         width: 100%; } }
   .container__half--2 {
@@ -169,7 +169,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .container__half--2 {
         width: 100%; } }
 
@@ -177,7 +177,7 @@ body {
   position: absolute;
   z-index: 10;
   width: 100%; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .header {
       height: 100%; } }
   .header__name {
@@ -190,7 +190,7 @@ body {
     .header__text--1 {
       top: 5%;
       margin-top: 2.5%; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .header__text--1 {
           top: 50%; } }
     .header__text--2 {
