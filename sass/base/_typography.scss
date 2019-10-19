@@ -1,0 +1,35 @@
+body{
+  font-family: roboto;
+}
+
+
+
+
+
+
+.header{
+
+
+
+  &__name{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 3;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+  }
+
+  &__text{
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+
+
+.lowpacity{
+  opacity:0 !important;
+  transition: opacity 1s;
+}
