@@ -64,10 +64,18 @@ body {
   line-height: 3;
   letter-spacing: 3px;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .header__name {
+      font-size: 3rem;
+      letter-spacing: 1px; } }
 
 .header__text {
   color: white;
   font-size: 2rem; }
+  @media (max-width: 56.25em) {
+    .header__text {
+      font-size: 1.5rem;
+      letter-spacing: 1px; } }
 
 .lowpacity {
   opacity: 0 !important;
@@ -268,13 +276,16 @@ html {
 .message--1 {
   top: 45%;
   right: 2%; }
+  @media (max-width: 56.25em) {
+    .message--1 {
+      top: 65%; } }
 
 .message--2 {
   top: 25%;
   left: 2%; }
   @media (max-width: 56.25em) {
     .message--2 {
-      top: 35%; } }
+      top: 50%; } }
 
 .features {
   width: 100vw;
