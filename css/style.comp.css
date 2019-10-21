@@ -322,6 +322,7 @@ html {
   @media (max-width: 56.25em) {
     .description {
       flex-direction: column;
+      justify-content: center;
       background-image: linear-gradient(to right, #F5F5F5, #F4F4F4, #F3F3F3, #F1F1F1, #F5F5F5); } }
   .description__item {
     height: 60rem;
@@ -363,8 +364,10 @@ html {
         .description__item--2 {
           flex-direction: column;
           height: 100rem;
-          padding-right: 30%;
-          margin-left: -4rem; } }
+          padding-left: 4rem;
+          padding-right: 10rem;
+          margin-left: auto;
+          margin-right: auto; } }
 
 .features {
   width: inherit;
