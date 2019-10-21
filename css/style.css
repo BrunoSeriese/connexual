@@ -81,6 +81,25 @@ body {
   opacity: 0 !important;
   transition: opacity 1s; }
 
+.third-header {
+  position: relative;
+  z-index: 4;
+  font-size: 3rem;
+  color: #4C3A38;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.u-margin-right-small {
+  margin-right: 2rem !important; }
+
+.u-margin-right-medium {
+  margin-right: 6rem !important; }
+
+.spacefiller {
+  width: 100%;
+  height: 20rem; }
+
 .message {
   background-color: #F9F9F9;
   position: absolute;
@@ -143,6 +162,7 @@ html {
   overflow: hidden;
   border-top-right-radius: 1rem;
   overflow: hidden;
+  clip-path: polygon(100% 0, 100% 91%, 0 100%, 0 0);
   position: relative; }
   @media (max-width: 56.25em) {
     .container {
@@ -217,7 +237,8 @@ html {
     @media (max-width: 56.25em) {
       .container__half--2 {
         border-radius: 0;
-        width: 100%; } }
+        width: 100%;
+        height: 120%; } }
 
 .header {
   position: absolute;
@@ -287,7 +308,73 @@ html {
     .message--2 {
       top: 50%; } }
 
-.features {
-  width: 100vw;
+.description {
   height: 100vh;
-  background-color: #F7F7F7; }
+  width: inherit;
+  position: relative;
+  background-image: linear-gradient(to bottom, #F5F5F5, #F4F4F4, #F3F3F3, #F1F1F1, #F5F5F5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  clip-path: polygon(0 11%, 100% 0, 100% 90%, 0% 100%);
+  padding: 20rem 0;
+  margin-top: -17rem; }
+  @media (max-width: 56.25em) {
+    .description {
+      flex-direction: column;
+      background-image: linear-gradient(to right, #F5F5F5, #F4F4F4, #F3F3F3, #F1F1F1, #F5F5F5); } }
+  .description__item {
+    height: 60rem;
+    width: 40%;
+    text-align: center;
+    margin-right: -10%; }
+    .description__item--1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      @media (max-width: 56.25em) {
+        .description__item--1 {
+          width: 60%; }
+          .description__item--1 p.third-header {
+            margin-bottom: 3rem; } }
+      .description__item--1 p.paragraph {
+        font-size: 1.95rem; }
+    .description__item--2 {
+      background-image: url(../img/phone2.jpg);
+      background-position: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 80rem;
+      position: relative;
+      z-index: 5;
+      width: 50%; }
+      @media (max-width: 75em) {
+        .description__item--2 {
+          margin-top: -3%;
+          height: 100rem; } }
+      @media (max-width: 56.25em) {
+        .description__item--2 {
+          margin-top: -10%;
+          height: 100rem;
+          margin-left: -22rem; } }
+      @media (max-width: 37.5em) {
+        .description__item--2 {
+          flex-direction: column;
+          height: 100rem;
+          padding-right: 30%;
+          margin-left: -8rem; } }
+
+.features {
+  width: inherit;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7F7F7;
+  z-index: -1;
+  clip-path: polygon(100% 0, 100% 86%, 0 100%, 0 16%); }
+  .features__item {
+    width: 30rem;
+    height: 45rem;
+    background-color: red; }
