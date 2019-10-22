@@ -168,7 +168,7 @@ html {
     .container {
       flex-direction: column;
       border-radius: 0;
-      height: 140vh; } }
+      height: 200vh; } }
   @media (max-width: 37.5em) {
     .container {
       clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%); } }
