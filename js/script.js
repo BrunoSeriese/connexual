@@ -49,7 +49,7 @@ $(".message--1").toggleClass("lowpacity");
 
 $(".paid").click(function(){
   console.log($("#paid").css("background-color"));
-  if($("#paid").css("background-color") =="rgb(76, 58, 56)")
+  if($("#free").css("background-color") =="rgb(76, 58, 56)")
   {
     $(".pricing__right").toggleClass("active__item");
       $(".pricing__left").toggleClass("active__item");
@@ -60,7 +60,7 @@ $(".paid").click(function(){
 
 $(".free").click(function(){
     console.log($("#free").css("background-color"));
-    if($("#free").css("background-color") =="rgb(76, 58, 56)"){
+    if($("#paid").css("background-color") =="rgb(76, 58, 56)"){
   $(".pricing__left").toggleClass("active__item");
     $(".pricing__right").toggleClass("active__item");
   }
