@@ -595,7 +595,7 @@ html {
     overflow: hidden; }
     @media (max-width: 37.5em) {
       .pricing__item {
-        padding: 13rem 3rem;
+        padding: 40rem 3rem;
         padding-bottom: 0;
         height: 50rem; } }
   .pricing__part--1 {
