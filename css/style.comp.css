@@ -565,6 +565,9 @@ html {
   @media (max-width: 56.25em) {
     .pricing {
       height: 180vh; } }
+  @media (max-width: 37.5em) {
+    .pricing {
+      height: 80vh; } }
   .pricing__left {
     position: absolute;
     left: 0;
