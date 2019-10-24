@@ -497,7 +497,7 @@ html {
         font-size: 1.95rem; }
         @media (max-width: 56.25em) {
           .description__item--1 p.paragraph {
-            padding: 3rem 0; } }
+            padding-bottom: 6rem; } }
     .description__item--2 {
       background-image: url("../img/phone3.jpg");
       background-position: left;
@@ -516,7 +516,9 @@ html {
         .description__item--2 {
           background-size: cover;
           background-position: right;
-          height: 100rem; } }
+          height: 100rem;
+          margin-left: auto;
+          margin-right: auto; } }
       @media (max-width: 37.5em) {
         .description__item--2 {
           margin: 0;
@@ -565,6 +567,8 @@ html {
     .features__item:hover p.paragraph--big {
       opacity: 1; }
     .features__item:active p.paragraph--big {
+      opacity: 1; }
+    .features__item:focus p.paragraph--big {
       opacity: 1; }
 
 .pricing {
