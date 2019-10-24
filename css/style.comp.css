@@ -568,7 +568,7 @@ html {
   @media (max-width: 37.5em) {
     .pricing {
       align-items: center;
-      height: 90vh; } }
+      height: 100vh; } }
   .pricing__left {
     position: absolute;
     left: 0;
