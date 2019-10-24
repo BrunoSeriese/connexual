@@ -567,7 +567,8 @@ html {
       height: 180vh; } }
   @media (max-width: 37.5em) {
     .pricing {
-      height: 80vh; } }
+      align-items: center;
+      height: 90vh; } }
   .pricing__left {
     position: absolute;
     left: 0;
