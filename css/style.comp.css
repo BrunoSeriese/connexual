@@ -120,6 +120,9 @@ body {
       color: #F4F4F4; }
   .footer ul li:not(:last-child) {
     margin-right: 10rem; }
+    @media (max-width: 37.5em) {
+      .footer ul li:not(:last-child) {
+        margin-right: 7rem; } }
 
 hr {
   width: 75%;
@@ -590,10 +593,11 @@ html {
   align-items: flex-end;
   width: inherit;
   margin-top: -20rem;
+  padding-bottom: 10rem;
   background-color: #F4F4F4; }
   @media (max-width: 56.25em) {
     .pricing {
-      height: 180vh; } }
+      height: 120vh; } }
   @media (max-width: 37.5em) {
     .pricing {
       align-items: center;
@@ -682,6 +686,9 @@ html {
   .footer hr {
     width: 30%;
     margin-top: 4rem; }
+    @media (max-width: 37.5em) {
+      .footer hr {
+        width: 45%; } }
   .footer ul {
     display: flex;
     list-style: none; }
