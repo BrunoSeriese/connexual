@@ -109,6 +109,18 @@ body {
     transition: 0.2s ease-in;
     font-weight: bold; }
 
+.footer ul {
+  font-size: 2rem;
+  color: #F4F4F4; }
+  .footer ul li {
+    border-bottom: 1px solid #F4F4F4; }
+    .footer ul li a:link,
+    .footer ul li a:visited {
+      text-decoration: none;
+      color: #F4F4F4; }
+  .footer ul li:not(:last-child) {
+    margin-right: 10rem; }
+
 hr {
   width: 75%;
   margin-left: auto;
@@ -658,3 +670,24 @@ html {
     font-size: 1.5rem; }
     .pricing__list li:not(:last-child) {
       margin-bottom: 2.5rem; }
+
+.footer {
+  width: inherit;
+  height: 25vh;
+  background-color: #4C3A38;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex; }
+  .footer hr {
+    width: 30%;
+    margin-top: 4rem; }
+  .footer ul {
+    display: flex;
+    list-style: none; }
+  .footer__text {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    color: #F4F4F4; }
+    .footer__text span {
+      font-size: 1.6rem; }
